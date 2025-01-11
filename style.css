@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    overflow: hidden; /* Sayfa taşmasını engeller */
+}
+
+#calculator {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Maksimum genişlik belirle */
+    height: auto;
+}
+
+#display {
+    width: 100%;
+    height: 50px; /* Ekranı daha rahat görebilmek için biraz daha yüksek tutabiliriz */
+    text-align: right;
+    font-size: 28px; /* Ekran font boyutunu artırdık */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Padding ve border da hesaplamaya dahil edilir */
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+}
+
+.button {
+    font-size: 24px; /* Buton yazı boyutunu biraz büyütelim */
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
